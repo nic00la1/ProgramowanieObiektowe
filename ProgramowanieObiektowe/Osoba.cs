@@ -19,9 +19,11 @@ namespace ProgramowanieObiektowe
             DataUrodzenia = dataUrodzenia;
         }
 
-        public void WypiszInfo()
+        public virtual void WypiszInfo()
         {
-
+            Console.WriteLine("Imie: {0}", Imie);
+            Console.WriteLine("Nazwisko: {0}", Nazwisko);
+            Console.WriteLine("Data urodzenia: {0}", DataUrodzenia);
         }
     }
 }
