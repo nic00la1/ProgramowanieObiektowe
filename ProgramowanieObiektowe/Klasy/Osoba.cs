@@ -8,9 +8,9 @@ namespace ProgramowanieObiektowe.Klasy
 {
     public class Osoba
     {
-        protected string Imie { get; set; }
-        protected string Nazwisko { get; set; }
-        protected string DataUrodzenia { get; set; }
+        public string Imie { get; set; }
+        public string Nazwisko { get; set; }
+        public string DataUrodzenia { get; set; }
 
         public Osoba(string imie, string nazwisko, string dataUrodzenia)
         {
