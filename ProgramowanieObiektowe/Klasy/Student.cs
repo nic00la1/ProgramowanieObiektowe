@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ProgramowanieObiektowe
+namespace ProgramowanieObiektowe.Klasy
 {
     public class Student : Osoba
     {
@@ -21,9 +21,7 @@ namespace ProgramowanieObiektowe
 
         public override void WypiszInfo()
         {
-            Console.WriteLine("Imie: {0}", Imie);
-            Console.WriteLine("Nazwisko: {0}", Nazwisko);
-            Console.WriteLine("Data urodzenia: {0}", DataUrodzenia);
+            base.WypiszInfo();
             Console.WriteLine("Rok: {0}", rok);
             Console.WriteLine("Grupa: {0}", grupa);
             Console.WriteLine("Nr indeksu: {0}", nrIndeksu);
