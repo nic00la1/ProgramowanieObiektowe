@@ -15,7 +15,7 @@ class Program
 
         table.AddRow(osoba.Imie, osoba.Nazwisko, osoba.DataUrodzenia, "Osoba")
              .AddRow(student.Imie, student.Nazwisko, student.DataUrodzenia, $"Student: Rok: {((Student)student).Rok}, Grupa: {((Student)student).Grupa}, Nr Indeksu: {((Student)student).NrIndeksu}")
-             .AddRow(piłkarz.Imie, piłkarz.Nazwisko, piłkarz.DataUrodzenia, $"Piłkarz: Pozycja: {((Piłkarz)piłkarz).Pozycja}, Klub: {((Piłkarz)piłkarz).Klub}");
+             .AddRow(piłkarz.Imie, piłkarz.Nazwisko, piłkarz.DataUrodzenia, $"Piłkarz: Pozycja: {((Piłkarz)piłkarz).Pozycja}, Klub: {((Piłkarz)piłkarz).Klub},  Gole: {((Piłkarz)piłkarz).LiczbaGoli}");
         table.Write();
 
         Student student2 = new Student("Krzysztof", "Kaczyński", "15.08.2003", 2, 1, 212542);
@@ -25,7 +25,7 @@ class Program
 
         table = new ConsoleTable("Imię", "Nazwisko", "Data Urodzenia", "Dodatkowe Informacje");
         table.AddRow(student2.Imie, student2.Nazwisko, student2.DataUrodzenia, $"Student: Rok: {student2.Rok}, Grupa: {student2.Grupa}, Nr Indeksu: {student2.NrIndeksu}")
-             .AddRow(piłkarz2.Imie, piłkarz2.Nazwisko, piłkarz2.DataUrodzenia, $"Piłkarz: Pozycja: {piłkarz2.Pozycja}, Klub: {piłkarz2.Klub}");
+             .AddRow(piłkarz2.Imie, piłkarz2.Nazwisko, piłkarz2.DataUrodzenia, $"Piłkarz: Pozycja: {piłkarz2.Pozycja}, Klub: {piłkarz2.Klub},  Gole: {((Piłkarz)piłkarz).LiczbaGoli}");
         table.Write();
 
         ((Piłkarz)piłkarz).StrzelGola();
